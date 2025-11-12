@@ -2,24 +2,24 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #242424;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #afafaf;
 }
 
 .container {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #242424;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    color: #444;
+    color: #b4b4b4;
     margin-bottom: 20px;
 }
 
@@ -41,12 +41,12 @@ table {
 table th, table td {
     padding: 12px 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555555;
 }
 
 table th {
-    background-color: #f0f0f5;
-    color: #555;
+    background-color: #1a1a1a;
+    color: #a3a3a3;
 }
 
 form label {
@@ -61,7 +61,7 @@ form input[type="number"] {
     padding: 8px;
     margin-top: 4px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #242424;
     border-radius: 4px;
 }
 
@@ -69,7 +69,7 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #0066cc;
-    color: white;
+    color: rgb(44, 44, 44);
     border: none;
     border-radius: 4px;
     cursor: pointer;

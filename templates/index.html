@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
     <title>Lista de Alunos</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Alunos Cadastrados</h1>
+
     <a href="{{ url_for('cadastro') }}">Cadastrar novo aluno</a>
+
     <table border="1">
         <tr>
             <th>ID</th>
             <th>Nome</th>
             <th>Idade</th>
             <th>Curso</th>
+            <th>Ações</th> <!-- 👈 nova coluna -->
         </tr>
+
         {% for aluno in alunos %}
         <tr>
             <td>{{ aluno['id'] }}</td>
             <td>{{ aluno['nome'] }}</td>
             <td>{{ aluno['idade'] }}</td>
             <td>{{ aluno['curso'] }}</td>
+            <td>
+                <form action="{{ url_for('deletar', id=aluno['id']) }}" method="post" style="display:inline;">
+                    <button type="submit" style="background-color:red;color:white;">Deletar</button>
+                </form>
+
+            </td>
         </tr>
         {% endfor %}
     </table>

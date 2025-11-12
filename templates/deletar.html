@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Deletar Aluno</title>
+</head>
+<body>
+    <h1>Confirma exclusão?</h1>
+    <p>Você deseja mesmo excluir o aluno <strong>{{ aluno['nome'] }}</strong>?</p>
+
+    <form method="post">
+        <button type="submit" style="background-color:red;color:white;">Sim, deletar</button>
+        <a href="{{ url_for('index') }}">Cancelar</a>
+    </form>
+</body>
+</html>
